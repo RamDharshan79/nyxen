@@ -1,0 +1,256 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --dim-text: #555555;
+    --input-bg: #000000;
+    --btn-bg: #ffffff;
+    --btn-text: #000000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 3rem 4.5rem;
+}
+
+.logo-img {
+    height: 85px;
+    width: auto;
+    display: block;
+}
+
+.top-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Hero Section */
+.hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.est-text {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    margin-bottom: 2rem;
+    color: var(--dim-text);
+}
+
+.headline {
+    font-family: 'Anton', sans-serif;
+    font-size: 11.5rem;
+    line-height: 0.9;
+    letter-spacing: -0.01em;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.subheadline {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: #cccccc;
+    line-height: 1.7;
+    margin-bottom: 5rem;
+}
+
+/* Form Styles */
+.waitlist-form {
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+input[type="email"] {
+    flex: 6;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 1rem 0;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 700;
+    outline: none;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+input[type="email"]::placeholder {
+    color: #333333;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+button[type="submit"] {
+    flex: 4;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    padding: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: opacity 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+/* Move disclaimer up closer */
+.form-disclaimer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3.5rem;
+}
+
+.disclaimer-title {
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+}
+
+.disclaimer-text {
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #444444;
+}
+
+.message {
+    font-size: 0.85rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-top: 1rem;
+    display: block;
+}
+
+.message.hidden {
+    display: none;
+}
+
+.message.error { color: #ff3333; }
+.message.success { color: #ffffff; }
+
+/* Footer */
+.bottom-footer {
+    width: 100%;
+    border-top: 1px solid #111111;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-btn {
+    background: #151515;
+    color: #999999;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 0.65rem;
+    padding: 0.7rem 1.4rem;
+    transition: color 0.2s ease, background 0.2s ease;
+    border-radius: 0;
+}
+
+.footer-btn:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.copyright {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #444444;
+}
+
+@media (max-width: 1200px) {
+    .headline {
+        font-size: 8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .headline {
+        font-size: 6rem;
+    }
+    .page-wrapper {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 4rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    input[type="email"] {
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .page-wrapper {
+        padding: 1.5rem;
+    }
+}

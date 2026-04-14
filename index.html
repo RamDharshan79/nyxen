@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYXEN FASHION | Waitlist</title>
+    <meta name="description" content="Join the NYXEN FASHION waitlist for exclusive early access.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="top-header">
+            <img src="logo.svg" alt="NYXEN" class="logo-img">
+        </header>
+
+        <main class="hero">
+            <div class="est-text">ESTABLISHED 2026</div>
+            <h1 class="headline">DROP 001<br>IS COMING</h1>
+            <p class="subheadline">BE THE FIRST TO ACCESS EXCLUSIVE<br>CHOTHING.</p>
+
+            <form id="waitlist-form" class="waitlist-form">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="EMAIL ADDRESS" required>
+                    <button type="submit" id="submit-btn">JOIN THE WAITLIST</button>
+                </div>
+                <div id="form-message" class="message hidden"></div>
+                <div class="form-disclaimer">
+                    <p class="disclaimer-title">WE'LL PING YOU WHEN WE LAUNCH.</p>
+                    <p class="disclaimer-text">BY SIGNING UP YOU AGREE TO OUR TERMS OF SERVICE.</p>
+                </div>
+            </form>
+        </main>
+
+        <footer class="bottom-footer">
+            <div class="footer-top">
+                <img src="logo.svg" alt="NYXEN" class="logo-img">
+                <a href="terms.html" class="footer-btn">TERMS OF SERVICE</a>
+            </div>
+            <div class="footer-bottom">
+                <span class="copyright">©2026 NYXEN FASHION. ALL RIGHTS RESERVED.</span>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Supabase JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
